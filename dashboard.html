@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard | Strings Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">🎸 Strings Studio</a>
+    <nav><a href="index.html">Home</a><a href="index.html#lessons">Lessons</a><button id="logoutButton" class="nav-button secondary">Logout</button></nav>
+  </header>
+  <main class="dashboard-main">
+    <section class="dashboard-welcome">
+      <p class="eyebrow">STUDENT DASHBOARD</p>
+      <h1>Hello, <span id="studentName">Guitar learner</span> 👋</h1>
+      <p>Here you can view and manage the lessons you have booked.</p>
+    </section>
+    <section class="dashboard-stats">
+      <div class="stat-card"><p>Booked lessons</p><strong id="bookingCount">0</strong></div>
+      <div class="stat-card"><p>Learning level</p><strong>Beginner</strong></div>
+      <div class="stat-card"><p>Your goal</p><strong>Keep practising!</strong></div>
+    </section>
+    <section class="section booking-section">
+      <div class="section-heading left-heading"><p class="eyebrow">YOUR PLAN</p><h2>My bookings</h2></div>
+      <div id="bookingList" class="booking-list"></div>
+      <p id="emptyBookings" class="empty-state">You have no bookings yet. Visit the home page and choose a lesson to get started.</p>
+      <a class="button" href="index.html#lessons">Explore lessons</a>
+    </section>
+    <p class="notice">Your account and lesson bookings are saved in MongoDB.</p>
+  </main>
+  <footer><p>© 2026 Strings Studio · Web Development Mini Project</p><p>Eshita Rana · 26CSEL04</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

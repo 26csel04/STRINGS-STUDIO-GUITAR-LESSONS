@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strings Studio | Guitar Lessons</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">🎸 Strings Studio</a>
+    <nav>
+      <a href="#lessons">Lessons</a>
+      <a href="#about">About</a>
+      <button id="openLogin" class="nav-button">Login / Register</button>
+      <a href="dashboard.html" class="nav-button secondary">My Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">YOUR MUSICAL JOURNEY STARTS HERE</p>
+        <h1>Learn guitar.<br><span>Play your favourite songs.</span></h1>
+        <p>Friendly beginner lessons, simple practice plans, and a place to track your progress.</p>
+        <a class="button" href="#lessons">Explore lessons</a>
+      </div>
+      <div class="hero-card" aria-label="Guitar illustration">
+        <div class="guitar-emoji">🎸</div>
+        <h3>One chord at a time.</h3>
+        <p>Practice • Learn • Play</p>
+      </div>
+    </section>
+
+    <section id="lessons" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">START LEARNING</p>
+        <h2>Popular lessons</h2>
+        <p>Choose a lesson and book a practice session.</p>
+      </div>
+      <div class="lesson-grid">
+        <article class="lesson-card">
+          <div class="lesson-icon">🎵</div>
+          <h3>Guitar Basics</h3>
+          <p>Learn how to hold the guitar, tune the strings, and play your first notes.</p>
+          <div class="card-bottom"><span>Beginner</span><button class="book-button" data-lesson="Guitar Basics">Book lesson</button></div>
+        </article>
+        <article class="lesson-card">
+          <div class="lesson-icon">🎶</div>
+          <h3>First Chords</h3>
+          <p>Practice easy chords like G Major, A Major, and E Minor.</p>
+          <div class="card-bottom"><span>Beginner</span><button class="book-button" data-lesson="First Chords">Book lesson</button></div>
+        </article>
+        <article class="lesson-card">
+          <div class="lesson-icon">🎼</div>
+          <h3>Strumming Practice</h3>
+          <p>Build rhythm and learn simple strumming patterns for songs.</p>
+          <div class="card-bottom"><span>Practice</span><button class="book-button" data-lesson="Strumming Practice">Book lesson</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div>
+        <p class="eyebrow">ABOUT THE STUDIO</p>
+        <h2>A simple place to begin.</h2>
+      </div>
+      <p>Strings Studio is a student mini-project concept for beginner guitar learners. Students can explore lessons, register a demo account, and save lesson bookings in their browser.</p>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Strings Studio · Web Development Mini Project</p><p>Created by Eshita Rana · Roll No. 26CSEL04</p></footer>
+
+  <div id="authModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button id="closeModal" class="close-button" aria-label="Close">×</button>
+      <p class="eyebrow">WELCOME TO STRINGS STUDIO</p>
+      <h2 id="modalTitle">Create your account</h2>
+      <p class="muted">Demo only: your details stay in this browser.</p>
+      <form id="authForm">
+        <label for="name">Full name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" minlength="4" placeholder="At least 4 characters" required>
+        <button class="button full-width" type="submit">Register / Login</button>
+      </form>
+      <p id="authMessage" class="message" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>

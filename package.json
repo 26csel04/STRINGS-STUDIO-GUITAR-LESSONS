@@ -1,0 +1,33 @@
+{
+
+  "name": "strings-studio",
+
+  "version": "1.0.0",
+
+  "description": "Strings Studio Guitar Lessons Website",
+
+  "main": "server.js",
+
+  "scripts": {
+
+    "start": "node server.js"
+
+  },
+
+  "dependencies": {
+
+    "express": "^4.21.2",
+
+    "mongoose": "^8.9.5",
+
+    "dotenv": "^16.4.5",
+
+    "bcryptjs": "^2.4.3",
+
+    "express-session": "^1.18.1",
+
+    "connect-mongo": "^5.1.0"
+
+  }
+
+}
